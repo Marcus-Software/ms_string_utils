@@ -1,5 +1,5 @@
-import 'package:test/test.dart';
 import 'package:ms_string_utils/ms_string_utils.dart';
+import 'package:test/test.dart';
 
 void main() {
   test('must torn any sentence in camel case', () {
@@ -13,7 +13,7 @@ void main() {
   });
 
   test('must validate if a string is camel case', () {
-    expect(isCamelCase('HelloWorld'),isTrue);
-    expect(isCamelCase('Hello World'),isFalse);
+    expect(isCamelCase('HelloWorld'), isTrue);
+    expect(isCamelCase('Hello World'), isFalse);
   });
 }
