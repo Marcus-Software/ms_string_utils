@@ -11,7 +11,7 @@ String fromCamelCase(String value) {
 
 bool isCamelCase(String value) {
   assert(value != null);
-  return !value.trim().contains(' ');
+  return !value.trim().contains(' ') && camelCaseRegExp.hasMatch(value);
 }
 
 String toCamelCase(String value, [bool firstUpperCase = false]) {

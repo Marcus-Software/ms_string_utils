@@ -8,4 +8,8 @@ final dotSpaceRegExp = RegExp(r' ?\. ?');
 
 final firstCharacterRegExp = RegExp(r'^.{1,1}');
 
-final camelCaseRegExp = RegExp(r'((^[A-z]|[A-Z]{1,1})[a-z]*)');
+final firstWordRegExp = RegExp(r'(^ ?\w*)');
+
+final lowerCaseRegExp = RegExp(r'(^[a-z à-ý]*$)');
+
+final upperCaseRegExp = RegExp(r'(^[A-Z À-Ý]*$)');
