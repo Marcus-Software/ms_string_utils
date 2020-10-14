@@ -1,5 +1,7 @@
 library ms_string_utils;
 
+import 'package:ms_map_utils/ms_map_utils.dart';
+
 part './src/camel_case.dart';
 part './src/capitalize_sentence.dart';
 part './src/capitalize_word.dart';
@@ -17,12 +19,14 @@ part './src/map_matches.dart';
 part './src/snake_case.dart';
 part './src/template.dart';
 
-final _fromCamelCase = fromCamelCase;
-final _isCamelCase = isCamelCase;
-final _toCamelCase = toCamelCase;
 final _capitalizeSentences = capitalizeSentences;
 final _capitalizeWord = capitalizeWord;
 final _capitalizeWords = capitalizeWords;
+final _countLines = countLines;
+final _fromCamelCase = fromCamelCase;
+final _isCamelCase = isCamelCase;
+final _isMultiline = isMultiline;
+final _toCamelCase = toCamelCase;
 
 extension MSStringUtil on String {
   String toCamelCase([bool firstUpperCase = false]) =>
@@ -44,4 +48,8 @@ extension MSStringUtil on String {
   String capitalizeWord() => _capitalizeWord(this);
 
   String capitalizeWords() => _capitalizeWords(this);
+
+  int countLines() => _countLines(this);
+
+  bool isMultiline() => _isMultiline(this);
 }

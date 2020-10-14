@@ -10,6 +10,8 @@ final firstCharacterRegExp = RegExp(r'^.{1,1}');
 
 final firstWordRegExp = RegExp(r'(^ ?\w*)');
 
+final linesRegExp = RegExp(r'\n', multiLine: true);
+
 final lowerCaseRegExp = RegExp(r'(^[a-z à-ý]*$)');
 
 final upperCaseRegExp = RegExp(r'(^[A-Z À-Ý]*$)');
