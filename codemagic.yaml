@@ -1,0 +1,10 @@
+# Check out https://docs.codemagic.io/getting-started/yaml/ for more information
+
+workflows:
+  flutter-package:
+    name: ms_string_utils
+    environment:
+      flutter: dev
+    scripts:
+      - flutter packages pub get
+      - flutter test
